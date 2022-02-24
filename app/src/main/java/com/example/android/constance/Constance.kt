@@ -1,4 +1,4 @@
-package com.example.android
+package com.example.android.constance
 
 object Constance{
     const val NAME_SYN = "Витя Архипов"
