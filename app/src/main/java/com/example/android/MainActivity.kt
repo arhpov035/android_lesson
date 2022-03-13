@@ -19,13 +19,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun onClickGoManually(view: View) {
-        val intent = Intent(this, TestActivityManually::class.java)
-        startActivity(intent)
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 100 && resultCode == RESULT_OK && data != null){
+
+            bindingClass.textView3.text = data.getStringExtra("key2")
+
+        }
     }
 
-    fun onClickClose(view: View) {
-        finish()
+    fun onClickTest1(view: View){
+        val i = Intent(this, TestActivity::class.java)
+        i.putExtra("key", "Как тебя зовут?")
+        startActivityForResult(i, 100)
     }
-
 }
