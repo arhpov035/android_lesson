@@ -1,15 +1,16 @@
 package com.example.android.constance
 
 object Constance{
-    const val INGINER_SUELDO = 10000
-    const val DVORNIK_SUELDO = 1000
-    const val DIRECTOR_SUELDO = 100000
+    const val SIGN_IN_STATE = "sign_in"
+    const val SIGN_UP_STATE = "sign_up"
+    const val SIGN_STATE = "sign_state"
+    const val REQUEST_CODE_SIGN_IN = 1212
+    const val REQUEST_CODE_SIGN_UP = 2121
 
-    const val DIRECTOR = "Egor"
-    const val INGINER = "Andrey"
-    const val DVORNIK = "Sergey"
-
-    const val INGINER_PASSWORD = "1232"
-    const val DIRECTOR_PASSWORD = "4565"
-    const val DVORNIK_PASSWORD = "6677"
+    const val LOGIN = "login"
+    const val PASSWORD = "password"
+    const val NAME = "name"
+    const val SURNAME = "surname"
+    const val MIDDLE_NAME = "middle_name"
+    const val AVATAR_ID = "avatar_id"
 }

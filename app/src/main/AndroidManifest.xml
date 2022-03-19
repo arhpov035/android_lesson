@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestActivity"
+            android:name=".SignInUpAct"
             android:exported="true">
 
         </activity>
