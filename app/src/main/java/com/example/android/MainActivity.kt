@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
         for ((index, name) in nameArray.withIndex()){ // withIndex - получаем название элемента и индекс
 //            resultArray.add("Имя: $name - прибыль = ${earnArray[index] - lostArray[index]}")
             when(gradeArray[index]){
-                in bad -> badArray.add("Плохие оценки: Ученик: $name")
-                in normal -> normalArray.add("Нормальные  оценки: Ученик: $name")
-                in nice -> niceArray.add("Хорошие оценки: Ученик: $name")
-                excellent -> excellentArray.add("Отличные оценки: Ученик: $name")
+                in bad -> badArray.add("Плохие оценки: Ученик: $name - ${gradeArray[index]}")
+                in normal -> normalArray.add("Нормальные  оценки: Ученик: $name - ${gradeArray[index]}")
+                in nice -> niceArray.add("Хорошие оценки: Ученик: $name - ${gradeArray[index]}")
+                excellent -> excellentArray.add("Отличные оценки: Ученик: $name - ${gradeArray[index]}")
             }
         }
 
