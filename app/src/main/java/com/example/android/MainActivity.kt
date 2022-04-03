@@ -2,48 +2,41 @@ package com.example.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-
+import android.view.View
+import com.example.android.databinding.ActivityMainBinding
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 class MainActivity : AppCompatActivity() {
-    val bad = 0..3
-    val normal = 4..6
-    val nice = 7..9
-    val excellent = 10
-    val gradeArray = arrayOf(4, 7, 3, 6, 10, 2)
-    val nameArray = arrayOf("Антон", "Егор", "Маша", "Светлана", "Юля", "Семен")
-    val badArray = ArrayList<String>()
-    val normalArray = ArrayList<String>()
-    val niceArray = ArrayList<String>()
-    val excellentArray = ArrayList<String>()
-
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        for ((index, name) in nameArray.withIndex()){ // withIndex - получаем название элемента и индекс
-//            resultArray.add("Имя: $name - прибыль = ${earnArray[index] - lostArray[index]}")
-            when(gradeArray[index]){
-                in bad -> badArray.add("Плохие оценки: Ученик: $name")
-                in normal -> normalArray.add("Нормальные  оценки: Ученик: $name")
-                in nice -> niceArray.add("Хорошие оценки: Ученик: $name")
-                excellent -> excellentArray.add("Отличные оценки: Ученик: $name")
-            }
-        }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
 
-        badArray.forEach{
-            Log.d("MyLog", it)
-        }
-        normalArray.forEach{
-            Log.d("MyLog", it)
-        }
-        niceArray.forEach{
-            Log.d("MyLog", it)
-        }
-        excellentArray.forEach{
-            Log.d("MyLog", it)
+    fun onClickResult(view: View){
+        if(!isFieldEmpty()){
+            val result = getString(R.string.result_info) + getResult()
+            binding.tvResult.text = result
         }
     }
 
+    private fun isFieldEmpty(): Boolean{
+        binding.apply {
+            if(edA.text.isNullOrEmpty()) edA.error = "Поле должно быть заполнено"
+            if(edB.text.isNullOrEmpty()) edB.error = "Поле должно быть заполнено"
+            return  edA.text.isNullOrEmpty() || edB.text.isNullOrEmpty()
+        }
+    }
 
-
-
+    private fun getResult(): String{
+        val a: Double
+        val b: Double
+        binding.apply {
+            a = edA.text.toString().toDouble()
+            b = edB.text.toString().toDouble()
+        }
+        return sqrt((a.pow(2) + b.pow(2))).toString()
+    }
 }
