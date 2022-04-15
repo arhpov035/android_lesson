@@ -1,8 +1,5 @@
 <resources>
-    <string name="app_name">PifagorApp</string>
-    <string name="title">Вычислить "С"</string>
-    <string name="result_info">Результат:&#160;</string>
-    <string name="result">Результат</string>
-    <string name="input_a">Введите значение \"a\"</string>
-    <string name="input_b">Введите значение \"b\"</string>
+    <string name="app_name">PlantsHandBook</string>
+    <string name="add_plant">Add Plant</string>
+    <string name="textview">TextView</string>
 </resources>

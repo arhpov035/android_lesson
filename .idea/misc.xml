@@ -3,13 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/react/AndroidStudioProjects/android/app/src/main/res/layout/activity_main.xml" value="0.33240740740740743" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1055" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/layout-land/activity_main.xml" value="0.3796875" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/layout/activity_main.xml" value="0.38333333333333336" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/layout/activity_manually.xml" value="0.38333333333333336" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/layout/activity_sign_up_in.xml" value="0.38333333333333336" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/layout/activity_test.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/react/AndroidStudioProjects/PlantsHandBook/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/react/AndroidStudioProjects/PlantsHandBook/app/src/main/res/layout/plant_item.xml" value="0.4" />
+        <entry key="..\:/Users/react/AndroidStudioProjects/test2/app/src/main/res/layout/plant_item.xml" value="0.2630208333333333" />
       </map>
     </option>
   </component>
