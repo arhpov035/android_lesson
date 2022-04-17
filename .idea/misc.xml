@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/react/AndroidStudioProjects/PlantsHandBook/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/PlantsHandBook/app/src/main/res/layout/plant_item.xml" value="0.4" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/android_lesson/app/src/main/res/layout/activity_edit.xml" value="0.25" />
-        <entry key="..\:/Users/react/AndroidStudioProjects/test2/app/src/main/res/layout/plant_item.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/react/AndroidStudioProjects/ToolBarLesson/app/src/main/res/layout/activity_main.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/react/AndroidStudioProjects/ToolBarLesson/app/src/main/res/menu/main_menu.xml" value="0.19010416666666666" />
       </map>
     </option>
   </component>

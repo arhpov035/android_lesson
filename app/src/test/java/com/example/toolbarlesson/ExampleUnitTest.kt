@@ -1,4 +1,4 @@
-package com.example.plantshandbook
+package com.example.toolbarlesson
 
 import org.junit.Test
 
