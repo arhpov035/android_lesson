@@ -2,40 +2,34 @@ package com.example.toolbarlesson
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Toast
+import com.example.toolbarlesson.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "Admin"
-    }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.bNav.selectedItemId = R.id.item3
+        binding.bNav.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.item1 -> {
+                    Toast.makeText(this, "Item 1", Toast.LENGTH_SHORT).show()
+                }
+                R.id.item2 -> {
+                    Toast.makeText(this, "Item 2", Toast.LENGTH_SHORT).show()
+                }
+                R.id.item3 -> {
+                    Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show()
+                }
+                R.id.item4 -> {
+                    Toast.makeText(this, "Item 4", Toast.LENGTH_SHORT).show()
+                }
+            }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home -> finish()
-            R.id.sync ->{
-                Toast.makeText(this, "Sync", Toast.LENGTH_SHORT).show()
-            }
-            R.id.save ->{
-                Toast.makeText(this, "Save", Toast.LENGTH_SHORT).show()
-            }
-            R.id.delete ->{
-                Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show()
-            }
-            R.id.search ->{
-                Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show()
-            }
+            true
         }
-        return true
     }
 }
