@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.toolbarlesson"
+        applicationId "com.example.drawerlayout"
         minSdk 23
         targetSdk 32
         versionCode 1
@@ -29,7 +29,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
     buildFeatures{
         viewBinding true
     }
