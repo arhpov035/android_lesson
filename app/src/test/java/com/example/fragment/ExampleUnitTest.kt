@@ -1,4 +1,4 @@
-package com.example.drawerlayout
+package com.example.fragment
 
 import org.junit.Test
 
