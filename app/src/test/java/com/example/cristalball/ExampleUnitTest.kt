@@ -1,4 +1,4 @@
-package com.example.fragment
+package com.example.cristalball
 
 import org.junit.Test
 
