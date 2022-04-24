@@ -1,4 +1,4 @@
-package com.example.cristalball
+package com.example.countdowntimer
 
 import org.junit.Test
 
